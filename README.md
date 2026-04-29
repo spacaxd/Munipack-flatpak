@@ -6,18 +6,18 @@ Flatpak is a universal package management system that bundles the application wi
 
 
 ## Prerequisites
-Ensure you have Flatpak installed on your system. You also need to enable the Flathub repository, as Munipack relies on its base runtime to function:
+Ensure you have Flatpak installed on your system. You also need to enable the official Flathub repository, as Munipack relies on its base runtime to function:
 ```bash
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 ```
 
 ## Installation
-Download the `cz.muni.physics.munipack.flatpak` file from the [build folder](https://github.com/martin-spacek/Munipack-flatpak/tree/main/build), or directly via CLI:
+Download the `cz.muni.physics.munipack.flatpak` bundle from the [build folder](https://github.com/martin-spacek/Munipack-flatpak/tree/main/build), or directly via CLI:
 ```bash
 wget https://github.com/martin-spacek/Munipack-flatpak/raw/main/build/cz.muni.physics.munipack.flatpak
 ```
 
-Install Install the downloaded Flatpak from the directory where it is located:
+Install the downloaded Flatpak bundle from the directory where it is located:
 ```bash
 flatpak install --user cz.muni.physics.munipack.flatpak
 ```
