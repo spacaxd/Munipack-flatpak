@@ -74,7 +74,7 @@ modules:
   # --- MUNIPACK ---
   - name: munipack
     buildsystem: autotools
-    # Notice we changed /usr/local to /app because of the Flatpak sandbox!
+    # Changed /usr/local to /app because of the Flatpak sandbox!
     config-opts:
       - 'LDFLAGS=-L/app/lib'
       - 'CPPFLAGS=-I/app/include'
