@@ -29,32 +29,27 @@ flatpak install --user cz.muni.physics.munipack.flatpak
 ## Running commands
 
 ### File Browser
-
 To open the specialized file browser GUI, use:
 ```bash
 flatpak run --command=xmunipack cz.muni.physics.munipack.xmunipack
 ```
 ### File Viewer
-
 To directly open a specific FITS file in the viewer, use:
 ```bash
 flatpak run --command=xmunipack cz.muni.physics.munipack.xmunipack IMG_5807.fits
 ```
 ### Command-line interface
-
 To use the command-line tools for processing, run:
 ```bash
 flatpak run --command=munipack cz.muni.physics.munipack.xmunipack dark image.fits
 ```
 ## Command aliases
-
 If you'd like to use the commands exactly as they are written in the official [Munipack guide](https://munipack.physics.muni.cz/guide.html), you need to add these aliases to your .bashrc:
-
 1. Open your .bashrc with your preferred editor, e.g.:
     ```bash
     nano ~/.bashrc
     ```
-
+    
 2. Add these lines to the end of the file:
     ```
     # Aliases for Munipack-flatpak
