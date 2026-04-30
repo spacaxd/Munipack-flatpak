@@ -2,7 +2,7 @@
 Type=Application
 Name=Munipack
 Comment=A general astronomical image processing software
-Icon=munipack_icon
+Icon=cz.muni.physics.munipack
 Exec=xmunipack %f
 Terminal=false
 MimeType=image/fits

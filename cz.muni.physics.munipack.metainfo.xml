@@ -13,11 +13,11 @@
   <launchable type="desktop-id">cz.muni.physics.munipack.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://github.com/martin-spacek/Munipack-flatpak/blob/desktop-entry/scr/munipack_file_browser.png</image>
+      <image>https://raw.githubusercontent.com/martin-spacek/Munipack-flatpak/main/scr/munipack_file_browser.png</image>
       <caption>File browser</caption>
     </screenshot>
     <screenhot>
-      <image>https://github.com/martin-spacek/Munipack-flatpak/blob/desktop-entry/scr/munipack_image_viewer.png</image>
+      <image>https://raw.githubusercontent.com/martin-spacek/Munipack-flatpak/main/scr/munipack_image_viewer.png</image>
       <caption>Image viewer</caption>
     </screenhot>
   </screenshots>
