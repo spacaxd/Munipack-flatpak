@@ -20,8 +20,3 @@ jobs:
         with:
           bundle: cz.muni.physics.munipack.flatpak
           manifest-path: cz.muni.physics.munipack.yaml
-      - name: Upload Bundle
-        uses: actions/upload-artifact@v4
-        with:
-          name: munipack-flatpak-bundle
-          path: cz.muni.physics.munipack.flatpak
