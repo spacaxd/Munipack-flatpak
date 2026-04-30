@@ -16,5 +16,5 @@ jobs:
       - name: Build Flatpak
         uses: flatpak/flatpak-github-actions/flatpak-builder@v6
         with:
-          bundle: cz.muni.physics.munipack.flatpak
+          bundle: cz.muni.physics.munipack-x86_64.flatpak
           manifest-path: cz.muni.physics.munipack.yaml
