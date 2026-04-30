@@ -20,7 +20,7 @@ You can install the latest Munipack Flatpak bundle by running the following comm
 ```bash
 flatpak install --user https://github.com/martin-spacek/Munipack-flatpak/releases/latest/download/cz.muni.physics.munipack.flatpak
 ```
-or by manually downloading the bundle from releases and running the foollowing command from the directory where it is located:
+or by manually downloading the bundle from the releases tab and running the following command from the directory where it is located:
 ```bash
 flatpak install --user cz.muni.physics.munipack.flatpak
 ```
