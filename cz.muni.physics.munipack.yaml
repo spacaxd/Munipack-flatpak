@@ -1,6 +1,6 @@
-app-id: cz.muni.physics.munipack.xmunipack
+app-id: cz.muni.physics.munipack
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: xmunipack
 finish-args:
@@ -21,8 +21,8 @@ modules:
     buildsystem: autotools
     sources:
       - type: archive
-        url: https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio_latest.tar.gz
-        sha256: fad44fff274fdda5ffcc0c0fff3bc3c596362722b9292fc8944db91187813600
+        url: https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.6.4.tar.gz
+        sha256: 227b637b91c9820ea96f39a65eb087f053de567d82f4338e2884f123f8183c55
 
   # 2. MINPACK (Original Fortran Version)
   - name: minpack
@@ -74,7 +74,7 @@ modules:
   # --- MUNIPACK ---
   - name: munipack
     buildsystem: autotools
-    # Changed /usr/local to /app because of the Flatpak sandbox!
+    # Changed /usr/local to /app because of the Flatpak sandbox
     config-opts:
       - 'LDFLAGS=-L/app/lib'
       - 'CPPFLAGS=-I/app/include'
@@ -83,3 +83,23 @@ modules:
       - type: archive
         url: https://integral.physics.muni.cz/ftp/munipack/munipack-0.6.2.tar.gz
         sha256: 7a3abbb1270188c600d6e8feca57f46c3a1a58439f91422934efccac47755d3b
+
+# --- ICON, DESKTOP AND METAINFO ---
+  - name: extra-data
+    buildsystem: simple
+    build-commands:
+      # .desktop 
+      - install -D xmunipack.desktop /app/share/applications/cz.muni.physics.munipack.desktop
+
+      # icon
+      - install -D munipack_icon.png /app/share/icons/hicolor/256x256/apps/cz.muni.physics.munipack.png
+
+      # AppStream metadata
+      - install -D cz.muni.physics.munipack.metainfo.xml /app/share/metainfo/cz.muni.physics.munipack.metainfo.xml
+    sources:
+      - type: file
+        path: xmunipack.desktop
+      - type: file
+        path: munipack_icon.png
+      - type: file
+        path: cz.muni.physics.munipack.metainfo.xml
