@@ -78,7 +78,7 @@ modules:
       - type: archive
         url: https://integral.physics.muni.cz/ftp/munipack/munipack-0.6.2.tar.gz
         sha256: 7a3abbb1270188c600d6e8feca57f46c3a1a58439f91422934efccac47755d3b
-        # --- ICON, DESKTOP AND METAINFO ---
+  # --- ICON, DESKTOP AND METAINFO ---
   - name: extra-data
     buildsystem: simple
     build-commands:
